@@ -1,7 +1,6 @@
 <template>
 
   <a-layout class="my-trigger">
-    <!-- <div id="my-progress"></div> -->
     <a-layout-sider class="my-layout-sider" v-model="collapsed" :trigger="null" collapsible>
       <div class="logo" >{{collapsed?'天倬':'天倬系统管理'}}</div>
       <a-menu
@@ -13,14 +12,14 @@
       >
       <a-menu-item key="/home">
       <!-- replace是点击后不能返回 -->
-        <router-link to="/home" tag="div" replace>
+        <router-link to="/home" replace>
           <a-icon type="home" />
           <span>主页</span>
         </router-link>
 
       </a-menu-item>
       <a-menu-item key="/user">
-        <router-link to="/user" tag="div"  replace>
+        <router-link to="/user"  replace>
           <a-icon type="user" />
           <span>员工列表</span>
         </router-link>
@@ -29,7 +28,7 @@
       <a-sub-menu key="业务管理">
         <span slot="title"><a-icon type="money-collect" /><span>业务管理</span></span>
         <a-menu-item key="/work/list">
-          <router-link to="/work/list" tag="div"  replace>
+          <router-link to="/work/list"  replace>
             工单列表
           </router-link>
         </a-menu-item>
@@ -86,6 +85,7 @@ export default {
       selectedOption: [],
       // 下拉菜单选中的父标签
       selectOpen: [],
+      // 当前的页数
       percent: 0
 
     }

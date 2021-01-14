@@ -1,0 +1,22 @@
+
+#my-progress{
+    position: fixed;
+    z-index: 999;
+    margin: 0;
+    width:0;
+    left: 0;
+    height: 3px;
+    background-image: linear-gradient(to right,rgb(0, 0, 180),rgb(130, 158, 218),rgb(68, 107, 233));
+    animation: grow 1s infinite forwards;
+    
+}
+
+@keyframes grow {
+    from {
+        width:0;
+    }
+
+    to {
+        width:100%;
+    }
+}

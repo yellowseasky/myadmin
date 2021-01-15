@@ -1,12 +1,12 @@
 <template>
   <div class=''>
-    工作统计
+    <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: '',
+  name: 'work',
   data () {
     return {
 

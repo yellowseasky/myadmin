@@ -14,7 +14,6 @@ const routes = [{
 },
 {
   path: '/',
-  name: 'Layout',
   component: () => import('@/views/layout'),
   children: [
     {
@@ -30,8 +29,8 @@ const routes = [{
       component: () => import('@/views/home/home')
     },
     {
-      path: 'user',
-      name: 'User',
+      path: 'userlist',
+      name: 'userlist',
       meta: {
         title: '员工列表'
       },
@@ -41,21 +40,20 @@ const routes = [{
       path: 'work',
       name: 'Work',
       meta: {
-        model: '业务管理'
+        title: '业务统计',
+        model: '业务统计'
       },
-      component: () => import('@/views/work/workOrder'),
+      component: () => import('@/views/work/work'),
       children: [
         {
           path: 'list',
           name: 'list',
           meta: {
-            title: '工单列表',
-            model: '业务管理'
+            title: '工作统计'
           },
-          component: () => import('@/components/user-table')
+          component: () => import('@/views/work/workOrder')
         }
       ]
-
     }
   ]
 },

@@ -1,11 +1,14 @@
 <template>
-  <div>user</div>
-  <!-- <user-table></user-table> -->
+  <usertable/>
 </template>
 
 <script>
+import usertable from '@/components/user-table'
 export default {
   name: '',
+  components: {
+    usertable
+  },
   data () {
     return {
 

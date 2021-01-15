@@ -81,6 +81,7 @@ const data = [
 ]
 
 export default {
+  name: 'user-table',
   data () {
     return {
       data,

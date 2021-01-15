@@ -1,12 +1,16 @@
 <template>
-  <div class=''>
-    工作统计
-  </div>
+  <a-layout-content
+    :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }"
+  >
+    <bread></bread>
+    <router-view></router-view>
+  </a-layout-content>
 </template>
 
 <script>
+import Bread from '@/components/Bread'
 export default {
-  name: '',
+  name: 'layoutContent',
   data () {
     return {
 
@@ -16,7 +20,7 @@ export default {
 
   },
   components: {
-
+    Bread
   },
   computed: {
 

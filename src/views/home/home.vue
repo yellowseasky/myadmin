@@ -1,7 +1,7 @@
 <template>
   <div class=''>
     <a href="">主页</a>
- </div>
+  </div>
 </template>
 
 <script>

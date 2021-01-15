@@ -86,7 +86,6 @@ export default {
     }
   },
   created () {
-    // document.title = `天倬智能装备 - ${this.$route.meta.title}`
   }
 }
 </script>
